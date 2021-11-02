@@ -24,12 +24,11 @@ let seattle = {
 
     },
 };
-// seattle.hourlyCust();
+console.log(seattle);
+seattle.hourlyCust();
 // console.log(seattle.grandTotal)
-// console.log(seattle);
 
 let s1 = document.getElementById('s1')
-let sales = document.createElement("ul")
 for(let i = 0; i < seattle.salesTotal.length; i += 1){
     let salesLI = document.createElement("li")
     salesLI.textContent = seattle.salesTotal[i]
@@ -55,15 +54,14 @@ let tokyo = {
 
     },
 };
-// seattle.hourlyCust();
+console.log(tokyo);
+tokyo.hourlyCust();
 // console.log(seattle.grandTotal)
-// console.log(seattle);
 
 let s2 = document.getElementById('s2')
-let sales = document.createElement("ul")
-for(let i = 0; i < seattle.salesTotal.length; i += 1){
+for(let i = 0; i < tokyo.salesTotal.length; i += 1){
     let salesLI = document.createElement("li")
-    salesLI.textContent = seattle.salesTotal[i]
+    salesLI.textContent = tokyo.salesTotal[i]
     s2.appendChild(salesLI)
     
 }
@@ -85,15 +83,14 @@ let dubai = {
 
     },
 };
-// seattle.hourlyCust();
+console.log(dubai);
+dubai.hourlyCust();
 // console.log(seattle.grandTotal)
-// console.log(seattle);
 
 let s3 = document.getElementById('s3')
-let sales = document.createElement("ul")
-for(let i = 0; i < seattle.salesTotal.length; i += 1){
+for(let i = 0; i < dubai.salesTotal.length; i += 1){
     let salesLI = document.createElement("li")
-    salesLI.textContent = seattle.salesTotal[i]
+    salesLI.textContent = dubai.salesTotal[i]
     s3.appendChild(salesLI)
     
 }let paris = {
@@ -114,15 +111,14 @@ for(let i = 0; i < seattle.salesTotal.length; i += 1){
 
     },
 };
-// seattle.hourlyCust();
+console.log(paris);
+paris.hourlyCust();
 // console.log(seattle.grandTotal)
-// console.log(seattle);
 
 let s4 = document.getElementById('s4')
-let sales = document.createElement("ul")
-for(let i = 0; i < seattle.salesTotal.length; i += 1){
+for(let i = 0; i < paris.salesTotal.length; i += 1){
     let salesLI = document.createElement("li")
-    salesLI.textContent = seattle.salesTotal[i]
+    salesLI.textContent = paris.salesTotal[i]
     s4.appendChild(salesLI)
     
 }
@@ -144,15 +140,14 @@ let lima = {
 
     },
 };
-// seattle.hourlyCust();
+console.log(lima);
+lima.hourlyCust();
 // console.log(seattle.grandTotal)
-// console.log(seattle);
 
 let s5 = document.getElementById('s5')
-let sales = document.createElement("ul")
-for(let i = 0; i < seattle.salesTotal.length; i += 1){
+for(let i = 0; i < lima.salesTotal.length; i += 1){
     let salesLI = document.createElement("li")
-    salesLI.textContent = seattle.salesTotal[i]
+    salesLI.textContent = lima.salesTotal[i]
     s5.appendChild(salesLI)
     
 }
