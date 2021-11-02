@@ -37,11 +37,11 @@ for(let i = 0; i < seattle.salesTotal.length; i += 1){
     
 }
 
-let seattle = {
-    name: "Seattle",
-    minCust: 23,
-    maximum: 65,
-    avgCookie: 6.3,
+let tokyo = {
+    name: "Tokyo",
+    minCust: 3,
+    maximum: 24,
+    avgCookie: 1.2,
     salesTotal: [],
     grandTotal: 0,
     hourlyCust: function() {
@@ -59,19 +59,19 @@ let seattle = {
 // console.log(seattle.grandTotal)
 // console.log(seattle);
 
-let s1 = document.getElementById('s1')
+let s2 = document.getElementById('s2')
 let sales = document.createElement("ul")
 for(let i = 0; i < seattle.salesTotal.length; i += 1){
     let salesLI = document.createElement("li")
     salesLI.textContent = seattle.salesTotal[i]
-    s1.appendChild(salesLI)
+    s2.appendChild(salesLI)
     
 }
-let seattle = {
-    name: "Seattle",
-    minCust: 23,
-    maximum: 65,
-    avgCookie: 6.3,
+let dubai = {
+    name: "Dubai",
+    minCust: 11,
+    maximum: 38,
+    avgCookie: 3.7,
     salesTotal: [],
     grandTotal: 0,
     hourlyCust: function() {
@@ -89,18 +89,18 @@ let seattle = {
 // console.log(seattle.grandTotal)
 // console.log(seattle);
 
-let s1 = document.getElementById('s1')
+let s3 = document.getElementById('s3')
 let sales = document.createElement("ul")
 for(let i = 0; i < seattle.salesTotal.length; i += 1){
     let salesLI = document.createElement("li")
     salesLI.textContent = seattle.salesTotal[i]
-    s1.appendChild(salesLI)
+    s3.appendChild(salesLI)
     
-}let seattle = {
-    name: "Seattle",
-    minCust: 23,
-    maximum: 65,
-    avgCookie: 6.3,
+}let paris = {
+    name: "Paris",
+    minCust: 20,
+    maximum: 38,
+    avgCookie: 2.3,
     salesTotal: [],
     grandTotal: 0,
     hourlyCust: function() {
@@ -118,19 +118,19 @@ for(let i = 0; i < seattle.salesTotal.length; i += 1){
 // console.log(seattle.grandTotal)
 // console.log(seattle);
 
-let s1 = document.getElementById('s1')
+let s4 = document.getElementById('s4')
 let sales = document.createElement("ul")
 for(let i = 0; i < seattle.salesTotal.length; i += 1){
     let salesLI = document.createElement("li")
     salesLI.textContent = seattle.salesTotal[i]
-    s1.appendChild(salesLI)
+    s4.appendChild(salesLI)
     
 }
-let seattle = {
-    name: "Seattle",
-    minCust: 23,
-    maximum: 65,
-    avgCookie: 6.3,
+let lima = {
+    name: "Lima",
+    minCust: 2,
+    maximum: 16,
+    avgCookie: 4.6,
     salesTotal: [],
     grandTotal: 0,
     hourlyCust: function() {
@@ -148,11 +148,11 @@ let seattle = {
 // console.log(seattle.grandTotal)
 // console.log(seattle);
 
-let s1 = document.getElementById('s1')
+let s5 = document.getElementById('s5')
 let sales = document.createElement("ul")
 for(let i = 0; i < seattle.salesTotal.length; i += 1){
     let salesLI = document.createElement("li")
     salesLI.textContent = seattle.salesTotal[i]
-    s1.appendChild(salesLI)
+    s5.appendChild(salesLI)
     
 }
