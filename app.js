@@ -24,13 +24,135 @@ let seattle = {
 
     },
 };
-seattle.hourlyCust();
-console.log(seattle);
+// seattle.hourlyCust();
+// console.log(seattle.grandTotal)
+// console.log(seattle);
 
 let s1 = document.getElementById('s1')
 let sales = document.createElement("ul")
-for(let i = 0; i < salesTotal.length; i += 1){
+for(let i = 0; i < seattle.salesTotal.length; i += 1){
     let salesLI = document.createElement("li")
     salesLI.textContent = seattle.salesTotal[i]
     s1.appendChild(salesLI)
+    
+}
+
+let seattle = {
+    name: "Seattle",
+    minCust: 23,
+    maximum: 65,
+    avgCookie: 6.3,
+    salesTotal: [],
+    grandTotal: 0,
+    hourlyCust: function() {
+        for(let i = 0; i < hours.length; i += 1){
+            let numOfCust = genRange(this.minCust, this.maximum);
+            let custSales = Math.round(this.avgCookie * numOfCust);
+            this.salesTotal.push (hours[i] + " total sales : " + custSales);
+            this.grandTotal = this.grandTotal + custSales;
+
+        }
+
+    },
+};
+// seattle.hourlyCust();
+// console.log(seattle.grandTotal)
+// console.log(seattle);
+
+let s1 = document.getElementById('s1')
+let sales = document.createElement("ul")
+for(let i = 0; i < seattle.salesTotal.length; i += 1){
+    let salesLI = document.createElement("li")
+    salesLI.textContent = seattle.salesTotal[i]
+    s1.appendChild(salesLI)
+    
+}
+let seattle = {
+    name: "Seattle",
+    minCust: 23,
+    maximum: 65,
+    avgCookie: 6.3,
+    salesTotal: [],
+    grandTotal: 0,
+    hourlyCust: function() {
+        for(let i = 0; i < hours.length; i += 1){
+            let numOfCust = genRange(this.minCust, this.maximum);
+            let custSales = Math.round(this.avgCookie * numOfCust);
+            this.salesTotal.push (hours[i] + " total sales : " + custSales);
+            this.grandTotal = this.grandTotal + custSales;
+
+        }
+
+    },
+};
+// seattle.hourlyCust();
+// console.log(seattle.grandTotal)
+// console.log(seattle);
+
+let s1 = document.getElementById('s1')
+let sales = document.createElement("ul")
+for(let i = 0; i < seattle.salesTotal.length; i += 1){
+    let salesLI = document.createElement("li")
+    salesLI.textContent = seattle.salesTotal[i]
+    s1.appendChild(salesLI)
+    
+}let seattle = {
+    name: "Seattle",
+    minCust: 23,
+    maximum: 65,
+    avgCookie: 6.3,
+    salesTotal: [],
+    grandTotal: 0,
+    hourlyCust: function() {
+        for(let i = 0; i < hours.length; i += 1){
+            let numOfCust = genRange(this.minCust, this.maximum);
+            let custSales = Math.round(this.avgCookie * numOfCust);
+            this.salesTotal.push (hours[i] + " total sales : " + custSales);
+            this.grandTotal = this.grandTotal + custSales;
+
+        }
+
+    },
+};
+// seattle.hourlyCust();
+// console.log(seattle.grandTotal)
+// console.log(seattle);
+
+let s1 = document.getElementById('s1')
+let sales = document.createElement("ul")
+for(let i = 0; i < seattle.salesTotal.length; i += 1){
+    let salesLI = document.createElement("li")
+    salesLI.textContent = seattle.salesTotal[i]
+    s1.appendChild(salesLI)
+    
+}
+let seattle = {
+    name: "Seattle",
+    minCust: 23,
+    maximum: 65,
+    avgCookie: 6.3,
+    salesTotal: [],
+    grandTotal: 0,
+    hourlyCust: function() {
+        for(let i = 0; i < hours.length; i += 1){
+            let numOfCust = genRange(this.minCust, this.maximum);
+            let custSales = Math.round(this.avgCookie * numOfCust);
+            this.salesTotal.push (hours[i] + " total sales : " + custSales);
+            this.grandTotal = this.grandTotal + custSales;
+
+        }
+
+    },
+};
+// seattle.hourlyCust();
+// console.log(seattle.grandTotal)
+// console.log(seattle);
+
+let s1 = document.getElementById('s1')
+let sales = document.createElement("ul")
+for(let i = 0; i < seattle.salesTotal.length; i += 1){
+    let salesLI = document.createElement("li")
+    salesLI.textContent = seattle.salesTotal[i]
+    s1.appendChild(salesLI)
+    
 }
