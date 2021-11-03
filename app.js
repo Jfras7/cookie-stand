@@ -27,57 +27,77 @@ function Store(name, min, max, avgCookie, salesTotal, grandTotal){
 }
 let seattle = new Store("seattle", 23, 65, 6.3, [], 0)
 
-let s1 = document.getElementById('s1')
-for(let i = 0; i < seattle.salesTotal.length; i += 1){
-    let salesLI = document.createElement("li")
-    salesLI.textContent = seattle.salesTotal[i]
-    s1.appendChild(salesLI)
+// let s1 = document.getElementById('s1')
+// for(let i = 0; i < seattle.salesTotal.length; i += 1){
+//     let salesLI = document.createElement("li")
+//     salesLI.textContent = seattle.salesTotal[i]
+//     // s1.appendChild(salesLI)
     
-}
+// }
 
 let tokyo = new Store("tokyo", 3, 24, 1.2, [], 0)
 
-let s2 = document.getElementById('s2')
-for(let i = 0; i < tokyo.salesTotal.length; i += 1){
-    let salesLI = document.createElement("li")
-    salesLI.textContent = tokyo.salesTotal[i]
-    s2.appendChild(salesLI)
+// let s2 = document.getElementById('s2')
+// for(let i = 0; i < tokyo.salesTotal.length; i += 1){
+//     let salesLI = document.createElement("li")
+//     salesLI.textContent = tokyo.salesTotal[i]
+//     s2.appendChild(salesLI)
     
-}
+// }
 let dubai = new Store("dubai", 11, 38, 3.7, [], 0)
 
-let s3 = document.getElementById('s3')
-for(let i = 0; i < dubai.salesTotal.length; i += 1){
-    let salesLI = document.createElement("li")
-    salesLI.textContent = dubai.salesTotal[i]
-    s3.appendChild(salesLI)
-}
+// let s3 = document.getElementById('s3')
+// for(let i = 0; i < dubai.salesTotal.length; i += 1){
+//     let salesLI = document.createElement("li")
+//     salesLI.textContent = dubai.salesTotal[i]
+//     s3.appendChild(salesLI)
+// }
 let paris = new Store("paris", 20, 38, 2.3, [], 0)
 
-let s4 = document.getElementById('s4')
-for(let i = 0; i < paris.salesTotal.length; i += 1){
-    let salesLI = document.createElement("li")
-    salesLI.textContent = paris.salesTotal[i]
-    s4.appendChild(salesLI)
+// let s4 = document.getElementById('s4')
+// for(let i = 0; i < paris.salesTotal.length; i += 1){
+//     let salesLI = document.createElement("li")
+//     salesLI.textContent = paris.salesTotal[i]
+//     s4.appendChild(salesLI)
     
-}
+// }
 let lima = new Store("lima", 2, 16, 4.6, [], 0)
 
-let s5 = document.getElementById('s5')
-for(let i = 0; i < lima.salesTotal.length; i += 1){
-    let salesLI = document.createElement("li")
-    salesLI.textContent = lima.salesTotal[i]
-    s5.appendChild(salesLI)
+// let s5 = document.getElementById('s5')
+// for(let i = 0; i < lima.salesTotal.length; i += 1){
+//     let salesLI = document.createElement("li")
+//     salesLI.textContent = lima.salesTotal[i]
+//     s5.appendChild(salesLI)
     
-}
+// }
 
 const numberContainerElem = document.getElementById('container');
-Store.prototype.render = function(){
-    const articleElem = document.createElement('article');
-    numberContainerElem.appendChild(articleElem);
-}
+
+const articleElem = document.createElement('article');
+numberContainerElem.appendChild(articleElem);
 
 const salesTable = document.createElement('table');
 articleElem.appendChild(salesTable);
   const headerRowElem = document.createElement('tr');
   salesTable.appendChild(headerRowElem);
+
+  Store.prototype.render = function(){
+    // this.hourlyCustomers()
+    // let body = document.getElementById('tbody')
+    let row = document.createElement('tr')
+    row.textContent = this.name;
+    salesTable.appendChild(row)    // trying this out!!
+  for (let i = 0; i < hours.length; i++){
+    let salesTotal = document.createElement('td')
+    salesTotal.textContent = this.salesTotal[i]
+    row.appendChild(salesTotal);
+  }
+  let dailyTotal = document.createElement('td')
+  dailyTotal.textContent = this.grandTotal
+  row.appendChild(dailyTotal)
+}
+seattle.render();
+tokyo.render();
+dubai.render();
+paris.render();
+lima.render();
