@@ -18,7 +18,7 @@ function Store(name, min, max, avgCookie, salesTotal, grandTotal){
         for(let i = 0; i < hours.length; i += 1){
             this.numOfCust = genRange(this.minCust, this.maxCust);
             this.custSales = Math.round(this.avgCookie * this.numOfCust);
-            this.salesTotal.push (hours[i] + " total sales : " + this.custSales);
+            this.salesTotal.push (this.custSales);
             this.grandTotal = this.grandTotal + this.custSales;
             
         }
@@ -75,12 +75,24 @@ const numberContainerElem = document.getElementById('container');
 
 const articleElem = document.createElement('article');
 numberContainerElem.appendChild(articleElem);
-
 const salesTable = document.createElement('table');
 articleElem.appendChild(salesTable);
+
+function tableHeader(){
   const headerRowElem = document.createElement('tr');
   salesTable.appendChild(headerRowElem);
-
+  let blankCell = document.createElement('th');
+  headerRowElem.appendChild(blankCell);
+for(let i = 0; i < hours.length; i++){
+  let hour = document.createElement('th');
+  hour.textContent = hours[i];
+  headerRowElem.appendChild(hour);
+}
+let total = document.createElement('th');
+total.textContent = ("GT")
+headerRowElem.appendChild(total);
+}
+tableHeader()
   Store.prototype.render = function(){
     // this.hourlyCustomers()
     // let body = document.getElementById('tbody')
